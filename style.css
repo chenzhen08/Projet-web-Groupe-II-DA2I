@@ -1,0 +1,105 @@
+/* ===== RESET SIMPLE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== STYLE GLOBAL ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  color: #222;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* ===== SECTION HERO ===== */
+.hero {
+  padding: 40px 20px;
+  animation: fadeIn 1.2s ease;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hint {
+  font-size: 14px;
+  color: #444;
+  margin-top: 20px;
+}
+
+/* ===== PHOTO 3D ===== */
+.photo-3d {
+  width: 320px;
+  margin: 30px auto;
+  perspective: 1000px;
+}
+
+.photo-3d img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.photo-3d img:hover {
+  transform: rotateY(15deg) rotateX(8deg) scale(1.05);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+}
+
+/* ===== SECTION MEMBRES ===== */
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px 20px;
+}
+
+/* ===== CARTES MEMBRES ===== */
+.member-card {
+  text-decoration: none;
+  background-color: #ffffffcc;
+  color: #222;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* ===== ANIMATION D'ENTRÉE ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .photo-3d {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
