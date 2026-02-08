@@ -93,4 +93,21 @@ body{
   filter: brightness(1.1); /* Brille un peu plus */
 }
 
+div{
+    border-radius: 16px;
+    border: #00F solid 2px;
+    box-shadow: 5px 7px rgb(129, 129, 233);
+    width: 400px;
+    height: 400px;
+    padding: 40px;
+}
+
+div:hover{
+  box-shadow: 0 0 20px #04f5fd;
+  scale: 1.02;
+}
+
+a{
+  
+}
 
