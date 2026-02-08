@@ -103,3 +103,45 @@ body {
     font-size: 28px;
   }
 }
+
+footer{
+  height: 40px;.
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 1);
+  border: 2px solid rgba(255, 255, 255, 0,6);
+  overflow: hidden;
+  
+}
+
+.footer p{
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: 20px ;
+  animation: bienvenue 6s linear 0s infinite alternate-reverse ;
+}
+
+@keyframes doigt{
+   
+    50%{
+      opacity: 0;
+    }
+
+    100%{
+      opacity: 1;
+    }
+}
+ 
+@keyframes bienvenue {
+    0%{
+      color: #222;
+      transform: translateX(-60%);
+    }
+
+    100%{
+      color: #a8edea;
+      transform: translateX(60vw);
+    }
+}
+
+
