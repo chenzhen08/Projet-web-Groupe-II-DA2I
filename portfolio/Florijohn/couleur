@@ -1,0 +1,19 @@
+Usage,Code Hexa,Couleur
+Fond,#121212,Anthracite profond
+Texte Principal,#FFFFFF,Blanc pur
+Accent (Boutons),#00D1B2,Turquoise vif
+Bordures / Cartes,#1E1E1E,Gris foncé
+
+
+Usage,Code Hexa,Couleur
+Fond,#F8F9FA,Blanc cassé / Gris très clair
+Texte Principal,#212529,Noir charbon
+Accent (Liens),#4361EE,Bleu royal moderne
+Secondaire,#ADB5BD,Gris moyen
+
+
+Usage,Code Hexa,Couleur
+Fond,#0F172A,Bleu nuit
+Texte Principal,#F1F5F9,Givre
+Accent principal,#F43F5E,Rose corail
+Accent secondaire,#FB923C,Orange doux
