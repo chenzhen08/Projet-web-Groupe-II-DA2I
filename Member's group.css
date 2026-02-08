@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #51538bf8;
     min-height: 100vh;
     padding: 20px;
 }
@@ -14,7 +14,7 @@ body {
 .hero {
     text-align: center;
     padding: 40px 20px;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(1, 1, 37, 0.95);
     border-radius: 15px;
     margin-bottom: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -22,21 +22,21 @@ body {
 
 .hero h1 {
     font-size: 2.5em;
-    color: #667eea;
+    color: #2a4de9;
     margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 1.2em;
-    color: #555;
+    color: #f7f3f3;
     margin-bottom: 20px;
 }
 
 .Acceuil {
     display: inline-block;
     padding: 12px 30px;
-    background: #667eea;
-    color: white;
+    background: #09123a;
+    color: rgb(241, 239, 239);
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
@@ -44,7 +44,7 @@ body {
 }
 
 .Acceuil:hover {
-    background: #764ba2;
+    background: #3eeeee;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -63,7 +63,7 @@ body {
 }
 
 .sectcaptain {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: #041a10;
     padding: 30px;
     border-radius: 20px;
     text-align: center;
@@ -106,7 +106,7 @@ body {
     display: inline-block;
     padding: 10px 25px;
     background: white;
-    color: #f5576c;
+    color: #0e0f80;
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
@@ -119,7 +119,7 @@ body {
 }
 
 .div1 {
-    background: white;
+    background: rgba(94, 7, 7, 0.877);
     padding: 25px;
     border-radius: 15px;
     text-align: center;
@@ -133,7 +133,6 @@ body {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
-/* Positionnement des images - LE PROBLÈME CORRIGÉ */
 .img-div1, .img-div2, .img-div3, .img-div4, 
 .img-div5, .img-div6, .img-div7, .img-div8, .img-div9 {
     width: 150px;
@@ -155,7 +154,7 @@ body {
 
 .div1 h2 {
     font-size: 1.1em;
-    color: #333;
+    color: #ecd3d3;
     margin-bottom: 15px;
     min-height: 50px;
     display: flex;
@@ -167,7 +166,7 @@ body {
     display: inline-block;
     padding: 10px 20px;
     background: #667eea;
-    color: white;
+    color: rgb(236, 205, 205);
     text-decoration: none;
     border-radius: 20px;
     font-weight: bold;
