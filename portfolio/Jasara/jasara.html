@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasara Clario | Portfolio EMIT</title>
+    <style>.btn-download {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #271591;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(230, 81, 0, 0.3);
+}
+
+.btn-download:hover {
+    background-color: #333;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(59, 31, 214, 0.2);
+}
+        /* CONFIGURATION GÉNÉRALE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdfaf7; /* Fond très légèrement orangé */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* EN-TÊTE (STYLE ÉNERGIE) */
+        header {
+            background: linear-gradient(135deg, #5100e6 0%, #261f66 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 8px solid #0c1e83;
+        }
+
+        .profile-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 6px solid white;
+            object-fit: cover;
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease; /* Animation fluide */
+        }
+
+        /* Effet de survol sur la photo */
+        .profile-img:hover {
+            transform: scale(1.1); /* S'agrandit légèrement */
+            border-color: #333;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin: 15px 0 5px;
+            text-shadow: 2px 2px 4px rgba(33, 76, 168, 0.2);
+        }
+
+        .tag {
+            background: #333;
+            color: #ebe9f1;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+
+        /* CONTENU PRINCIPAL */
+        .content {
+            max-width: 850px;
+            margin: -30px auto 50px;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: #2e187a;
+            border-left: 6px solid #190b6b;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        /* GRILLE DE CONTACT */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff3e0;
+            padding: 20px;
+            border-radius: 12px;
+            border-bottom: 4px solid #10126d;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            background: #ffe0b2;
+            transform: translateY(-5px);
+        }
+
+        .card strong {
+            color: #221d6d;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        /* MOBILE ADAPTATION */
+        @media (max-width: 600px) {
+            .content { width: 92%; padding: 25px; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="profile-container">
+            <img src="jasara_pdp.png" alt="Jasara Clario" class="profile-img">
+        </div>
+        <h1>Jasara Clario RANDRIAMIALISOA</h1>
+        <div class="tag">Étudiant L1 DAII | Ecole de Management et d'Innovation Technologique Fianarantsoa</div>
+    </header>
+
+    <div class="content">
+        
+        <section id="bio">
+            <h2>🎯 Mon Parcours</h2>
+            <p>Étudiant en première année de <strong>Développement d'Applications  Internet Intranet (DAII)</strong> à l'EMIT. Je me passionne pour la création de sites web modernes et l'apprentissage des nouvelles technologies informatiques.</p>
+        </section>
+
+        <section id="contact">
+            <h2>📩 Me Contacter</h2>
+            <div class="contact-grid">
+                <div class="card">
+                    <strong>📧 Email</strong>
+                    jasararandriamialisoa22@gmail.com
+                </div>
+                <div class="card">
+                    <strong>📞 Téléphone</strong>
+                    033 59 321 75 / 034 25 794 42
+                </div>
+                <div class="card">
+                    <strong>🔵 Facebook</strong>
+                    Randriamialisoa Jasara Clario
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>🛠️ Compétences en cours</h2>
+            <p>HTML5, CSS3, Algorithmique, Logique de programmation, Maintenance informatique.</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 - Jasara Clario - Créé avec passion pour le Web
+    </footer>
+        <a href="../../Member's group.html" class="btn-home">
+  <span>←</span> Retour à l'accueil
+</a>
+
+</body>
+</html>
