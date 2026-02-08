@@ -1,4 +1,3 @@
-/* Reset et styles de base */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@ body {
     padding: 20px;
 }
 
-/* Header */
 .hero {
     text-align: center;
     padding: 40px 20px;
@@ -51,7 +49,6 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Section principale */
 .sectmain {
     max-width: 1200px;
     margin: 0 auto;
@@ -65,7 +62,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* Chef de projet - Style spécial */
 .sectcaptain {
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     padding: 30px;
@@ -122,7 +118,6 @@ body {
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
 }
 
-/* Cartes des membres */
 .div1 {
     background: white;
     padding: 25px;
@@ -184,7 +179,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Responsive - Tablettes et petits écrans */
 @media (max-width: 992px) {
     .sect {
         gap: 20px;
@@ -196,7 +190,7 @@ body {
     }
 }
 
-/* Responsive - Mobile */
+
 @media (max-width: 768px) {
     body {
         padding: 10px;
@@ -260,7 +254,7 @@ body {
     }
 }
 
-/* Responsive - Très petits écrans */
+
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 1.3em;
