@@ -180,6 +180,7 @@ div:hover{
   margin-bottom: 20px ;
   margin: auto;
   margin-top: 20px ;
+  overflow: hidden;
 }
 
 .img-div-captain:hover{
@@ -187,8 +188,14 @@ div:hover{
   margin: auto; 
 }
 
-
-a{
+.img-captain{
+  position: relative;
+  right:30px;
+  bottom: 40px;
+  width: 400px ;
+  height: 350px;
   
 }
+
+.img
 
