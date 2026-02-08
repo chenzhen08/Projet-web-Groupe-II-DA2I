@@ -31,3 +31,36 @@ body{
     transform: translateY(0);
   }
 }
+
+.Acceuil {
+    border: solid 2px #00F;
+    color: #00F;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px;
+    background: linear-gradient(135deg, rgb(60, 255, 0),rgb(255, 355, ) );
+    text-align: center;
+    text-decoration: none;
+    border-radius: 45px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.Acceuil:hover{
+    box-shadow: none;
+    border: solid 2px rgba(255, 355, 255, 0.4);
+    background-color:rgba(145, 134, 134, 0.4);
+    color: #000;
+}
+
+.sect{
+    display: flex;
+    gap: 40px;
+    margin: 40px;
+}
+
+.sectcaptain{
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  padding: 40px ;
+}
