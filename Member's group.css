@@ -1,113 +1,282 @@
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #a8edea, #fed6e3);
-    color: #222;
-    text-align: center;
-    min-height: 100vh
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header */
 .hero {
-  padding: 40px 20px;
-  animation: fadeIn 1.2s ease;
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+    font-size: 2.5em;
+    color: #667eea;
+    margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
 }
 
 .Acceuil {
-    border: solid 2px #00F;
-    color: #00F;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 20px;
-    background: linear-gradient(135deg, rgb(60, 255, 0),rgb(255, 355, ) );
-    text-align: center;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #667eea;
+    color: white;
     text-decoration: none;
-    border-radius: 45px;
-    box-shadow: 5px 5px 5px #000;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-.Acceuil:hover{
-    box-shadow: none;
-    border: solid 2px rgba(255, 355, 255, 0.4);
-    background-color:rgba(145, 134, 134, 0.4);
-    color: #000;
+.Acceuil:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.sect{
+/* Section principale */
+.sectmain {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sect {
     display: flex;
-    gap: 40px;
-    margin: 40px;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
-.sectcaptain{
-  margin: 0 auto;
-  width: 400px;
-  height: 400px;
-  padding: 40px ;
+/* Chef de projet - Style spécial */
+.sectcaptain {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    color: white;
 }
 
-.btn-home {
-  /* Positionnement fixe en bas à droite */
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  
-  /* Design du bouton */
-  background: linear-gradient(135deg, #2c4fe9a1, #00D1B2);
-  color: rgb(235, 236, 218);
-  padding: 12px 20px;
-  border-radius: 50px; /* Forme pilule */
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  
-  /* Transition pour l'animation */
-  transition: all 0.3s ease;
-  z-index: 1000; /* Toujours au-dessus */
+.img-div-captain {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* --- Animation au survol --- */
-.btn-home:hover {
-  transform: translateY(-5px); /* Le bouton monte légèrement */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  filter: brightness(1.1); /* Brille un peu plus */
+.img-captain {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-div{
-    border-radius: 16px;
-    border: #00F solid 2px;
-    box-shadow: 5px 7px rgb(129, 129, 233);
-    width: 400px;
-    height: 400px;
-    padding: 40px;
+.sectcaptain h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-div:hover{
-  box-shadow: 0 0 20px #04f5fd;
-  scale: 1.02;
+.sectcaptain p {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-a{
-  
+.sectcaptain .profile {
+    display: inline-block;
+    padding: 10px 25px;
+    background: white;
+    color: #f5576c;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
+.sectcaptain .profile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Cartes des membres */
+.div1 {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.div1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Positionnement des images - LE PROBLÈME CORRIGÉ */
+.img-div1, .img-div2, .img-div3, .img-div4, 
+.img-div5, .img-div6, .img-div7, .img-div8, .img-div9 {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #667eea;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.img-div1 img, .img-div2 img, .img-div3 img, .img-div4 img,
+.img-div5 img, .img-div6 img, .img-div7 img, .img-div8 img, .img-div9 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.div1 h2 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1 .profile {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.div1 .profile:hover {
+    background: #764ba2;
+    transform: scale(1.05);
+}
+
+/* Responsive - Tablettes et petits écrans */
+@media (max-width: 992px) {
+    .sect {
+        gap: 20px;
+    }
+    
+    .div1 {
+        width: 45%;
+        min-width: 250px;
+    }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .hero {
+        padding: 25px 15px;
+        margin-bottom: 25px;
+    }
+    
+    .hero h1 {
+        font-size: 1.5em;
+    }
+    
+    .hero p {
+        font-size: 1em;
+    }
+    
+    .Acceuil {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+    
+    .sect {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .sectcaptain {
+        width: 100%;
+        max-width: 350px;
+        padding: 25px 15px;
+    }
+    
+    .img-div-captain {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .sectcaptain h2 {
+        font-size: 1.2em;
+    }
+    
+    .div1 {
+        width: 100%;
+        max-width: 350px;
+        padding: 20px;
+    }
+    
+    .img-div1, .img-div2, .img-div3, .img-div4, 
+    .img-div5, .img-div6, .img-div7, .img-div8, .img-div9 {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .div1 h2 {
+        font-size: 1em;
+        min-height: 40px;
+    }
+}
+
+/* Responsive - Très petits écrans */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.3em;
+    }
+    
+    .hero p {
+        font-size: 0.9em;
+    }
+    
+    .sectcaptain,
+    .div1 {
+        max-width: 100%;
+    }
+    
+    .sectcaptain h2,
+    .div1 h2 {
+        font-size: 0.95em;
+    }
+}
