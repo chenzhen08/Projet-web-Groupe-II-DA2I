@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | MIZA Tolitsarae Clarisse</title>
+    <link rel="stylesheet" href="../../style-global.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #fdfdfd;
+            color: #444;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 600px;
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 6px solid #e67e22; /* Une couleur différente pour varier un peu */
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+        .contact-info {
+            color: #e67e22;
+            font-weight: bold;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+        }
+        .bio {
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 35px;
+        }
+        .divider {
+            height: 2px;
+            width: 50px;
+            background-color: #eee;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        
+        <h1>MIZA Tolitsarae Clarisse</h1>
+        <div class="contact-info">📞 038 82 560 20</div>
+        
+        <div class="divider"></div>
+
+        <div class="bio">
+            <p>Bienvenue sur mon portfolio. Je suis une personne dynamique et organisée, prête à mettre mes compétences au service de projets innovants. Mon objectif est de combiner créativité et rigueur pour obtenir des résultats de haute qualité.</p>
+        </div>
+
+        <div class="nav-container">
+            <a href="../../Member's group.html" class="btn-retour">← Retour à l'accueil</a>
+        </div>
+    </div>
+
+</body>
+</html>
