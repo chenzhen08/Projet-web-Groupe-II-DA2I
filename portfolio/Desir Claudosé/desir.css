@@ -239,3 +239,30 @@ footer p:first-child {
         font-size: 0.9em;
     }
 }
+
+.btn-home {
+  /* Positionnement fixe en bas à droite */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  
+  /* Design du bouton */
+  background: linear-gradient(135deg, #2c4fe9a1, #00D1B2);
+  color: rgb(235, 236, 218);
+  padding: 12px 20px;
+  border-radius: 50px; /* Forme pilule */
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  
+  /* Transition pour l'animation */
+  transition: all 0.3s ease;
+  z-index: 1000; /* Toujours au-dessus */
+}
+
+/* --- Animation au survol --- */
+.btn-home:hover {
+  transform: translateY(-5px); /* Le bouton monte légèrement */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1); /* Brille un peu plus */
+}
